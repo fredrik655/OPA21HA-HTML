@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>WEBSITE</h1>
+            <nav>
+                <a href="#main-container">main</a>
+                <a href="#aside-container">aside</a>
+                <a href="#job-form-container">footer</a>
+            </nav>
+        </header>
+        <main>
+            <div id="main-container">
+                <h2>About me</h2>
+                <p>Etiam id metus turpis. Curabitur condimentum nisi lacus, id tempus nisl iaculis et. Ut lacinia ante sit amet neque tristique feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut quam lacus, mattis in maximus quis, tristique varius ante. Suspendisse maximus dictum egestas. Fusce a sem luctus, pharetra dolor sed, ultricies orci. </p>
+                <p>Morbi pellentesque a ex ut auctor. Duis tincidunt sem in ligula consequat dictum quis vel quam. Fusce tincidunt massa ut dictum bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris bibendum nec nisl sed consectetur. Cras tincidunt ut risus sit amet luctus. Praesent pulvinar eleifend quam, vitae tristique neque semper ac. Pellentesque accumsan tortor dui, eget commodo orci sodales a. In hac habitasse platea dictumst. Suspendisse consequat lacus dignissim est vestibulum, ac dapibus ex dignissim. Morbi dapibus purus non venenatis tempor. Morbi sem dolor, pharetra id mattis vel, tincidunt sit amet est. Maecenas eget dolor a leo dictum finibus. Suspendisse ornare dui sed leo laoreet, quis mollis tellus fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id tortor non ipsum semper tristique a id quam. </p>
+                <h3>More about me</h3>
+                <p>Integer erat ligula, hendrerit nec nulla ut, mattis pretium velit. Maecenas interdum est at elit vehicula, ac porta quam vehicula. Aenean feugiat dolor convallis interdum tincidunt. Mauris dapibus neque ut risus finibus rhoncus. Morbi auctor arcu ligula, ac condimentum odio tempor at. Morbi at fermentum magna. Curabitur sed orci id orci tristique efficitur. Integer malesuada bibendum augue, sed hendrerit urna.</p>
+            </div>
+        </main>
+        <aside>
+            <div id="aside-container">
+                <img src="./images/profile.webp" alt="portrait">
+                <h5>Skills</h5>
+                <ul class="skills-container">
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Ai</li>
+                    <li>Unit testing</li>
+                </ul>
+                <div id="linkedin-container">
+                    <img src="./images/linkedin.webp" alt="linkedin-logo">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">"Linkedin"</a>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <h3>Offer me a job</h3>
+            <div id="job-form-container">
+                <form>
+                    <label for="title-input">Job title</label>
+                    <input type="text" id="title-input" name="title-input" placeholder="CEO" required>
+                    <label for="city-input">Job location</label>
+                    <input type="text" id="city-input" name="city-input" placeholder="Halmstad" required>
+                    <label for="salary">Salary</label>
+                    <input type="number" id="salary-input" name="salary-input" placeholder="50000 sek" required>
+                    <label for="email">Contact email</label>
+                    <input type="email" id="email-input" name="email-input" placeholder="123@gmail.com" required>
+                    <button>Submit</button>
+                </form>
+                <div class="job-submitted-disabled">
+                    <h4>Job offer sent</h4>
+                    <div>
+                        <h5>Job title</h5>
+                        <p id="title-sent"></p>
+                    </div>
+                    <div>
+                        <h5>Job location</h5>
+                        <p id="location-sent"></p>
+                    </div>
+                    <div>
+                        <h5>Job Salary</h5>
+                        <p id="salary-sent"></p>
+                    </div>
+                    <div>
+                        <h5>Contact email</h5>
+                        <p id="email-sent"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+    <script src="./main.js" type="text/javascript"></script>
+</html>

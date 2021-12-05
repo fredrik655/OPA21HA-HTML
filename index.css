@@ -1,0 +1,228 @@
+
+
+
+/*page layout*/
+/**--------**/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header header"
+        "main main main main aside"
+        "main main main main aside"
+        "main main main main aside"
+        "footer footer footer footer footer";
+    width: 100vw;
+    height: 125vh;
+}
+
+/*header*/
+
+header {
+    grid-area: header;
+    background-color: #f2ebe9;
+    border-bottom: 3px solid white;
+    padding: 0 5rem 0 2.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #264143;
+}
+
+a {
+    text-decoration: none;
+    color: #264143;
+    margin: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+a:visited {
+    color: #264143;
+}
+
+a:hover {
+    color: #e99f4c;
+}
+
+
+/*main*/
+
+main {
+    grid-area: main;
+    background-color: #eddcd9;
+}
+
+#main-container {
+    padding: 20px;
+    color: #264143;
+}
+
+
+
+/*aside*/
+
+aside {
+    grid-area: aside;
+    background-color: #f2ebe9;
+    border-left: 3px solid white;
+    color: #264143;
+    padding: 20px;
+}
+
+aside img[alt="portrait"] {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+#aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#aside-container > * {
+    margin: 0.5rem;
+}
+
+#aside-container > h5 {
+    margin: 1rem 0 0 0;
+}
+
+aside img[alt="linkedin-logo"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-container * {
+    margin: 5px;
+}
+
+#linkedin-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*footer*/
+
+footer {
+    grid-area: footer;
+    background-color: #264143;
+    border-top: 3px solid white;
+    color: #eddcd9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+/*input form*/
+/**--------**/
+#job-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #eddcd9;
+    border-radius: 10px;
+    max-width: 14rem;
+    padding: 1rem;
+}
+
+#job-form-container:disabled {
+    display: none;
+}
+
+#job-form-container form * {
+    margin: 0.2rem;
+}
+
+label, input {
+    width: 10rem;
+}
+
+label {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.form-disabled *, .form-disabled{
+    display: none;
+    border: none;
+}
+
+.job-submitted-disabled {
+    display: none;
+}
+
+.job-submitted-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15rem;
+    border: 1px solid #eddcd9;
+    border-radius: 10px;
+}
+
+.job-submitted-container > * {
+    margin: 10px;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.job-submitted-container > * > * {
+    margin-top: 5px;
+    height: 25px;
+}
+
+.job-submitted-container > h4{
+    width: 10rem;
+}
+
+.job-submitted-container  h5{
+    margin-bottom: 2px;
+}
+
+
+
